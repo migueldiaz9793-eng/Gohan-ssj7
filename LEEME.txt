@@ -1,0 +1,17 @@
+CHICKEN WAR -> APK con GitHub (gratis)
+
+1. Crea una cuenta en github.com y un repositorio nuevo (ej. "chicken-war").
+2. Descomprime este zip y sube TODO el contenido a la raiz del repositorio
+   (Add file > Upload files). IMPORTANTE: debe subirse tambien la carpeta
+   oculta ".github". Si no se ve en tu explorador, arrastra la carpeta
+   completa o crea el archivo a mano: Add file > Create new file, escribe
+   ".github/workflows/build-apk.yml" y pega el contenido del archivo.
+3. Ve a la pestana "Actions" del repositorio. La compilacion empieza sola
+   (o pulsa "Build APK" > "Run workflow"). Tarda unos 5-8 minutos.
+4. Al terminar (check verde), entra a esa ejecucion y baja de la seccion
+   "Artifacts" el archivo "ChickenWar-APK". Es un zip con app-debug.apk dentro.
+5. Pasa el APK al telefono e instalalo (permite "instalar apps de origen
+   desconocido"). Se instala con icono de Capacitor por defecto.
+
+Para actualizar el juego: reemplaza www/index.html en el repositorio y la
+compilacion se repite sola.
